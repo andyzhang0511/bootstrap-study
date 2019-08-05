@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>初始化</title>
+
+    <!-- Bootstrap -->
+    <!-- 引入Bootstrap核心样式文件（必须） -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- 你自己的样式或其它文件 -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- 站点图标 -->
+    <link rel="shortcut icon" href="imgs/lk_favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 头部 -->
+    <header class="lk_header">
+      <!-- 上部分 -->
+      <div class="top-bar hidden-sm hidden-xs text-center text-muted">
+        <div class="container">
+          <div class="row">
+            <div class="top-bar-1 col-md-2">
+              <a href="">
+                <i class="icon-phone"></i>
+                <span class="text-muted">关注微信号</span>
+                <span class="caret"></span>
+                <img src="imgs/ewm_xzh.jpg" alt="张帆" width="130px" />
+              </a>
+            </div>
+            <div class="top-bar-2 col-md-5">
+              <i class="icon-tel"></i>
+              <span>8888-555-6666 (服务时间:9:00-21:00)</span>
+            </div>
+            <div class="top-bar-3 col-md-2">
+              <a href="#" class="text-muted">校企合作</a>
+              <a href="#" class="text-muted">培训师</a>
+            </div>
+            <div class="top-bar-4 col-md-3">
+              <a
+                class="btn btn-default btn-sm btn-register"
+                href="#"
+                role="button"
+                >免费注册</a
+              >
+              <a
+                class="text-muted"
+                href="#"
+                role="button"
+                style="margin-left: 10px"
+                data-toggle="modal"
+                data-target="#lk_login"
+                >立即登录</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 下部分 -->
+      <nav class="navbar navbar-default navbar-static-top navbar-lk">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#lk_nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="imgs/lk_logo_sm.png" alt="张帆" width="180px" />
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="lk_nav">
+            <ul class="nav navbar-nav">
+              <li><a href="#">关于我们</a></li>
+              <li><a href="#">课程介绍</a></li>
+              <li><a href="#">热门课程</a></li>
+              <li><a href="#">名师授课</a></li>
+              <li><a href="#">课堂互动</a></li>
+              <li><a href="#">联系我们</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+              <li><a href="#">个人中心</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </header>
+    <!-- /头部 -->
+
+    <!-- 轮播图 -->
+    <section id="lk_carousel" class="carousel slide" data-ride="carousel">
+      <!-- 指示器 -->
+      <ol class="carousel-indicators">
+        <li data-target="#lk_carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#lk_carousel" data-slide-to="1"></li>
+        <li data-target="#lk_carousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- 中间滚动的内容 -->
+      <div class="carousel-inner" role="listbox">
+        <div
+          class="item active"
+          data-large-img="imgs/slide_01_2000x410.jpg"
+          data-small-img="imgs/slide_01_640x340.jpg"
+        ></div>
+        <div
+          class="item"
+          data-large-img="imgs/slide_02_2000x410.jpg"
+          data-small-img="imgs/slide_02_640x340.jpg"
+        ></div>
+        <div
+          class="item"
+          data-large-img="imgs/slide_03_2000x410.jpg"
+          data-small-img="imgs/slide_03_640x340.jpg"
+        ></div>
+      </div>
+
+      <!-- 左右控制 -->
+      <a
+        class="left carousel-control"
+        href="#lk_carousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#lk_carousel"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <!-- /轮播图 -->
+
+    <!-- 关于我们 -->
+    <section id="lk_about" class="hidden-xs hidden-sm">
+      <!-- 标题 -->
+      <div class="title text-center">
+        <h1><strong>关于我们</strong></h1>
+        <img src="imgs/star.png" alt="" class="img-responsive" />
+      </div>
+      <!-- 内容 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="text-muted">
+              栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局
+            </p>
+            <p class="text-muted">
+              你的内容就可以放入这些创建好的布局中。下面就介绍一下 Bootstrap
+              栅格系统的工作原理：
+            </p>
+            <p class="text-muted">
+              行（row）”必须包含在 .container （固定宽度）或
+            </p>
+            <p class="text-muted">
+              栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局
+            </p>
+            <p class="text-muted">
+              你的内容就可以放入这些创建好的布局中。下面就介绍一下 Bootstrap
+              栅格系统的工作原理：
+            </p>
+            <p class="text-muted">
+              行（row）”必须包含在 .container （固定宽度）或
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="imgs/team.png"
+              alt=""
+              class="img-rounded img-responsive"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /关于我们 -->
+
+    <!-- 产品特色 -->
+    <section id="lk_product">
+      <div class="container">
+        <div class="row">
+          <!-- 头部选项 -->
+          <div style="overflow:auto;">
+            <!-- <ul class="nav nav-tabs" role="tablist" style="width:750px;"> -->
+            <ul class="nav nav-tabs" role="tablist" style="width:750px;">
+              <li role="presentation" class="active">
+                <a
+                  href="#profile1"
+                  aria-controls="home"
+                  role="tab"
+                  data-toggle="tab"
+                  >在线大学</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#profile2"
+                  aria-controls="profile"
+                  role="tab"
+                  data-toggle="tab"
+                  >会员专享</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#profile3"
+                  aria-controls="messages"
+                  role="tab"
+                  data-toggle="tab"
+                  >优质视频</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#profile3"
+                  aria-controls="messages"
+                  role="tab"
+                  data-toggle="tab"
+                  >优质视频</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#profile3"
+                  aria-controls="messages"
+                  role="tab"
+                  data-toggle="tab"
+                  >优质视频</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#profile3"
+                  aria-controls="messages"
+                  role="tab"
+                  data-toggle="tab"
+                  >优质视频</a
+                >
+              </li>
+              <li class="pull-right hidden-sm hidden-xs">
+                <a
+                  href="#"
+                  aria-controls="settings"
+                  role="tab"
+                  data-toggle="tab"
+                  >更多</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 展示的内容 -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="profile1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 pd-left">
+                    <!-- 第一部分 -->
+                    <div id="product_one_1" class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img
+                            class="media-object"
+                            src="imgs/ewm_xzh.jpg"
+                            alt="二维码"
+                            width="140"
+                          />
+                        </a>
+                      </div>
+                      <div
+                        class="media-body text-muted"
+                        style="padding-top:100px;"
+                      >
+                        <h5 class="media-heading">更多资讯欢迎</h5>
+                        <h5 class="media-heading">关注料科学院</h5>
+                      </div>
+                    </div>
+
+                    <!-- 第二部分 -->
+                    <!-- 设置lead后，对于字体来说，大屏幕比较大，小屏幕比较小 -->
+                    <ol id="product_one_2" class="breadcrumb lead">
+                      <li><a href="#">清华大学</a></li>
+                      <li><a href="#">北京大学</a></li>
+                      <li><a href="#">浙江大学</a></li>
+                      <li><a href="#">复旦大学</a></li>
+                    </ol>
+
+                    <!-- 第三部分 -->
+                    <h1 id="product_one_3">
+                      欢迎来到IT人的在线大学&nbsp;
+                      <strong class="text-danger">授课学院</strong>
+                    </h1>
+
+                    <!-- 第四部分 -->
+                    <div id="product_one_4">
+                      <button
+                        class="btn btn-primary btn-lg"
+                        type="submit"
+                        style="margin-right:20px"
+                      >
+                        课程咨询
+                      </button>
+                      <button class="btn btn-default btn-lg" type="submit">
+                        了解更多
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 hidden-xs hidden-sm">
+                    <img src="imgs/iphoneX.png" alt="" class="img-responsive" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 hidden-xs hidden-sm">
+                    <img
+                      src="imgs/iphoneX2.png"
+                      alt=""
+                      class="img.responsive"
+                    />
+                  </div>
+                  <div id="pd_two_1" class="col-md-8 pd-left">
+                    <h1 class="text-warning">华中科技大学</h1>
+                    <p class="lead">
+                      连续多年在多个场合，习近平总书记强调指出：
+                      “伟大的抗战精神，永远是激励中国人民克服一切艰难险阻、
+                      为实现中华民族伟大复兴而奋斗的强大精神动力”，提出“在新的历史条件下，
+                      全党全国各族人民要大力弘扬伟大抗战精神。”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 pd-left">
+                    <h1>
+                      <strong class="text-danger">
+                        案例驱动·体系贯穿·全面系统
+                      </strong>
+                    </h1>
+                    <h3>
+                      10-15分钟的视频
+                      <span class="text-warning">知识点拆分讲解</span>
+                    </h3>
+                    <h4 class="text-muted" style="margin:15px 0;">
+                      为实现中华民族伟大复兴而奋斗的强大精神动力，
+                      提出“在新的历史条件下，全党全国各族人民要大力弘扬伟大抗战精神。
+                    </h4>
+                    <div
+                      class="badge"
+                      style="padding: 15px 10px;cursor: pointer;"
+                    >
+                      已更新3000+视频 | 100000+人订阅
+                    </div>
+                  </div>
+                  <div class="col-md-6 hidden-xs hidden-sm">
+                    <img src="imgs/macBook.png" alt="" class="img-responsive" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /产品特色 -->
+
+    <!-- 热门课程 -->
+    <section id="lk_hotlessons">
+      <!-- 标题 -->
+      <div class="title text-center">
+        <h1><strong>热门课程</strong></h1>
+        <img src="imgs/star.png" alt="" class="img-responsive" />
+      </div>
+      <!-- 内容 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 lesson">
+            <div class="media">
+              <div class="media-left">
+                <img
+                  src="imgs/lnj.png"
+                  alt=""
+                  class="media-object img-responsive img-circle img-thumbnail"
+                  width="100"
+                />
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="text-danger">【热】</span>
+                  从零玩转HTML5+跨平台
+                </h4>
+                <p class="text-muted" style="margin-top:10px;">
+                  李南江老师带你从零基础入门大前端开发
+                </p>
+              </div>
+              <div class="media-right text-danger">
+                206节课
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 lesson">
+            <div class="media">
+              <div class="media-left">
+                <img
+                  src="imgs/lnj.png"
+                  alt=""
+                  class="media-object img-responsive img-circle img-thumbnail"
+                  width="100"
+                />
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="text-danger">【热】</span>
+                  从零玩转HTML5+跨平台
+                </h4>
+                <p class="text-muted" style="margin-top:10px;">
+                  李南江老师带你从零基础入门大前端开发
+                </p>
+              </div>
+              <div class="media-right text-danger">
+                206节课
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 lesson">
+            <div class="media">
+              <div class="media-left">
+                <img
+                  src="imgs/lnj.png"
+                  alt=""
+                  class="media-object img-responsive img-circle img-thumbnail"
+                  width="100"
+                />
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="text-danger">【热】</span>
+                  从零玩转HTML5+跨平台
+                </h4>
+                <p class="text-muted" style="margin-top:10px;">
+                  李南江老师带你从零基础入门大前端开发
+                </p>
+              </div>
+              <div class="media-right text-danger">
+                206节课
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 lesson">
+            <div class="media">
+              <div class="media-left">
+                <img
+                  src="imgs/lnj.png"
+                  alt=""
+                  class="media-object img-responsive img-circle img-thumbnail"
+                  width="100"
+                />
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="text-danger">【热】</span>
+                  从零玩转HTML5+跨平台
+                </h4>
+                <p class="text-muted" style="margin-top:10px;">
+                  李南江老师带你从零基础入门大前端开发
+                </p>
+              </div>
+              <div class="media-right text-danger">
+                206节课
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 lesson">
+            <div class="media">
+              <div class="media-left">
+                <img
+                  src="imgs/lnj.png"
+                  alt=""
+                  class="media-object img-responsive img-circle img-thumbnail"
+                  width="100"
+                />
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="text-danger">【热】</span>
+                  从零玩转HTML5+跨平台
+                </h4>
+                <p class="text-muted" style="margin-top:10px;">
+                  李南江老师带你从零基础入门大前端开发
+                </p>
+              </div>
+              <div class="media-right text-danger">
+                206节课
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 lesson">
+            <div class="media">
+              <div class="media-left">
+                <img
+                  src="imgs/lnj.png"
+                  alt=""
+                  class="media-object img-responsive img-circle img-thumbnail"
+                  width="100"
+                />
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <span class="text-danger">【热】</span>
+                  从零玩转HTML5+跨平台
+                </h4>
+                <p class="text-muted" style="margin-top:10px;">
+                  李南江老师带你从零基础入门大前端开发
+                </p>
+              </div>
+              <div class="media-right text-danger">
+                206节课
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /热门课程 -->
+
+    <!-- 友情链接 -->
+    <section id="lk_link">
+      <!-- 标题 -->
+      <div class="title text-center">
+        <h1><strong>友情链接</strong></h1>
+        <img src="imgs/star.png" alt="" class="img-responsive" />
+      </div>
+      <ul class="logos">
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+        <li>
+          <a href=""><img src="imgs/google-logo.png" width="50" alt=""/></a>
+        </li>
+      </ul>
+    </section>
+    <!-- /友情链接 -->
+
+    <!-- 尾部 -->
+    <footer id="lk_footer">
+      <div class="container">
+        <div class="row" style="padding-top: 15px;">
+          <div class="col-md-3 col-md-offset-1 one">
+            <div class="row">
+              <ul class="col-md-6">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+              </ul>
+              <ul class="col-md-6">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 two">
+            <h5>公司地址：北京市海淀区清华大学</h5>
+            <h5>联系电话：188888888888</h5>
+            <h5>邮箱地址：467472974@qq.com</h5>
+          </div>
+
+          <div class="col-md-3 three">
+            <h5>联系我们:</h5>
+            <a href="#">
+              <img
+                src="imgs/weixin-h.png"
+                alt=""
+                width="50px"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="关注微博"
+              />
+              <img
+                src="imgs/xinlang-h.png"
+                alt=""
+                width="50px"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="关注微信"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /尾部 -->
+
+    <!-- 登录 -->
+    <div
+      class="modal fade"
+      id="lk_login"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">登录信息</h4>
+          </div>
+          <div class="modal-body">
+            <input type="text" placeholder="请输入手机号码" />
+            <input type="password" placeholder="请输入密码" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              关闭
+            </button>
+            <button type="button" class="btn btn-primary">登录</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 以下代码，如果不使用JS插件则不需要 -->
+    <!-- 由于Bootstrap的JS插件依赖jquery 所以要引入jquery -->
+    <script src="lib/jquery/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
